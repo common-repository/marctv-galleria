@@ -1,0 +1,201 @@
+html .galleria-theme-classic.galleria-container {
+    background: transparent;
+}
+
+html .fullscreen.galleria-theme-classic.galleria-container {
+    background: black;
+}
+
+html .galleria-theme-classic .galleria-stage {
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+html .galleria-theme-classic .entry .gallery-caption {
+    display: none;
+}
+
+html .galleria-theme-classic .galleria-image-nav-right,
+html .galleria-theme-classic .galleria-image-nav-left,
+html .galleria-theme-classic .galleria-thumb-nav-right,
+html .galleria-theme-classic .galleria-thumb-nav-left,
+html .galleria-theme-classic .galleria-info-fullscreen {
+    background-image: url(marctv-theme/classic-map.png);
+    background-repeat: no-repeat;
+    -webkit-box-sizing: initial;
+    -moz-box-sizing: initial;
+    box-sizing: initial;
+}
+
+/* Use retina sprite */
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+    html .galleria-theme-classic .galleria-image-nav-right,
+    html .galleria-theme-classic .galleria-image-nav-left,
+    html .galleria-theme-classic .galleria-thumb-nav-right,
+    html .galleria-theme-classic .galleria-thumb-nav-left,
+    html .galleria-theme-classic .galleria-info-fullscreen {
+        /* Reference the @2x Sprite */
+        background-image: url(marctv-theme/classic-map@2x.png);
+        /* Translate the @2x sprite's dimensions back to 1x */
+        background-size: 1016px 100px;
+    }
+}
+
+html .galleria-theme-classic .galleria-image-nav-right,
+html .galleria-theme-classic .galleria-image-nav-left {
+    -webkit-filter: drop-shadow(5px 5px 7px rgba(0, 0, 0, 0.5));
+    -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=5, OffY=5, Color='#444')";
+    filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=5, OffY=5, Color='#444')";
+}
+
+.no-thumbnails html .galleria-theme-classic .galleria-stage {
+    bottom: 10px;
+}
+
+html .galleria-theme-classic.touch .galleria-image-nav {
+    display: block;
+}
+
+html .galleria-theme-classic .galleria-loader {
+    background-color: none;
+    width: 42px;
+    height: 16px;
+    position: absolute;
+    top: 50%;
+    display: block;
+    background-position: 2px 2px;
+    left: 48%;
+    padding: 2px;
+    z-index: 2;
+    background-repeat: no-repeat;
+    background-image: url(marctv-theme/loader.gif);
+}
+
+html .galleria-theme-classic .galleria-info-link {
+    background-position: -667px -3px;
+    width: 25px;
+    height: 25px;
+}
+
+html .galleria-theme-classic .galleria-thumb-nav-left,
+html .galleria-theme-classic .galleria-thumb-nav-right {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml . galleria-theme-classic-user-select : none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+html .galleria-theme-classic .galleria-thumbnails-container {
+    left: 0;
+    right: 0;
+}
+
+.no-thumbnails .galleria-thumbnails-container {
+    display: none;
+    height: 0;
+}
+
+html .galleria-theme-classic .fullscreen .galleria-thumbnails-container {
+    display: none;
+}
+
+.no-thumbnails .galleria-stage,
+html .galleria-theme-classic .fullscreen .galleria-stage {
+    bottom: 0px;
+}
+
+html .galleria-theme-classic.galleria-container .galleria-thumb-nav-left,
+html .galleria-theme-classic.galleria-container .galleria-thumb-nav-right,
+html .galleria-theme-classic.galleria-container .galleria-thumb-nav-left:hover,
+html .galleria-theme-classic.galleria-container .galleria-thumb-nav-right:hover {
+    background-color: white;
+}
+
+html .galleria-theme-classic .galleria-thumb-nav-left.disabled,
+html .galleria-theme-classic .galleria-thumb-nav-right.disabled,
+html .galleria-theme-classic .galleria-thumb-nav-left.disabled:hover,
+html .galleria-theme-classic .galleria-thumb-nav-right.disabled:hover {
+    opacity: 0.2;
+    filter: alpha(opacity=20);
+}
+
+html .galleria-theme-classic .galleria-thumb-nav-left,
+html .galleria-theme-classic .galleria-thumb-nav-right,
+html .galleria-theme-classic .galleria-image-nav-left,
+html .galleria-theme-classic .galleria-image-nav-right {
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+}
+
+html .galleria-theme-classic .galleria-info-description {
+    font-size: 90%;
+    font-family: inherit;
+}
+
+html .galleria-theme-classic .galleria-counter {
+    background-color: #FFFFFF;
+    border-top-right-radius: 3px;
+    color: #333;
+    font: 600 80%/1 arial, sans-serif;
+    left: 0;
+    padding: 2px 6px;
+    position: absolute;
+    text-align: right;
+    bottom: -1px;
+    z-index: 10;
+}
+
+html .galleria-theme-classic.fullscreen .galleria-counter {
+    background-color: #000;
+    color: #fff;
+}
+
+html .galleria-theme-classic .galleria-info-fullscreen {
+    background-color: #fff;
+    border-bottom-right-radius: 3px;
+    background-position: -804px -4px;
+    color: #000000;
+    cursor: pointer;
+    height: 22px;
+    padding: 4px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 23px;
+    z-index: 2;
+    display: block;
+}
+
+html .galleria-theme-classic .galleria-info-fullscreen:hover {
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+}
+
+/* close button */
+html .galleria-theme-classic.fullscreen .galleria-info-fullscreen {
+    background-position: -865px -4px;
+    background-color: black;
+}
+
+/* close button on touch devices */
+html .galleria-theme-classic.touch.fullscreen .galleria-info-fullscreen,
+html .galleria-theme-classic.touch.fullscreen .galleria-info {
+    top: 20px;
+}
+
+html .galleria-theme-classic.touch.fullscreen .galleria-image-nav-left,
+html .galleria-theme-classic.touch.fullscreen .galleria-image-nav-right {
+    display: none;
+}
+
+html .galleria-theme-classic .galleria-info {
+    top: 4px;
+    left: 5px;
+}
+
+html .galleria-theme-classic .gallery-item {
+    width: 10%;
+}
